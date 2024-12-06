@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Solarsystem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <aside>
+    <figure id="sun"></figure>
+  </aside>
+
+  <header>
+    <h1> SOLSYSTEMET </h1>
+    <h4> SOLARIS </h4>
+  </header>
+
+  <main>
+
+    <section id="planets" class="planets">
+      <figure id="mercery"></figure>
+      <figure id="venus"></figure>
+      <figure id="earth"></figure>
+      <figure id="mars"></figure>
+      <figure id="jupiter"></figure>
+      <figure id="saturn">
+        <figure id="ring"></figure>
+      </figure>
+      <figure id="uranus"></figure>
+      <figure id="neptune"></figure>
+    </section>
+
+    <section id="planet-details">
+      <figure id="planet-zoomed">
+        <figure id="radient"></figure>
+      </figure>
+
+      <article class="planet-info" id="planet-name"></article>
+      <article class="planet-info" id="planet-desc"></article>
+      <p>Min temp:</p> <article class="planet-info" id="planet-mintemp"></article>
+      <p>Max temp:</p> <article class="planet-info" id="planet-maxtemp"></article>
+      <p>Km från solen:</p> <article class="planet-info" id="planet-distance"></article>
+      <p>Månar:</p> <article class="planet-info" id="planet-moons"></article>
+      <button id="back">Go back</button>
+      </article>
+    </section>
+
+
+    
+    </main>
+  <script src="api.js"></script>
+  <script src="script.js"></script>
+  <script src="eventlisteners.js"></script>
+</body>
+
+</html>
+
