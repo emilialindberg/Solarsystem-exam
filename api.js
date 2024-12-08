@@ -1,3 +1,5 @@
+//fetch api-key
+
 const fetchApiKey = () => {
     let promise = new Promise(async (resolve, reject) => {
         try {
@@ -12,6 +14,8 @@ const fetchApiKey = () => {
     });
     return promise
 }
+
+//fetch api-data
 
 const fetchPlanetData = (apiKey) => {
     let promise = new Promise(async (resolve, reject) => {

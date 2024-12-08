@@ -1,4 +1,4 @@
- 
+// get planets background-color and present info when click
 
 document.getElementById("sun").addEventListener('click', () => {
     let color = getBackgroundColorById("sun")

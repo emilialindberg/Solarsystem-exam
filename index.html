@@ -6,10 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Solarsystem</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Secular+One&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -17,13 +13,14 @@
     <figure id="sun"></figure>
   </aside>
 
-  <header>
+  <header class="header1">
     <h1> SOLSYSTEMET </h1>
     <h4> SOLARIS </h4>
   </header>
 
   <main>
 
+    <!-- Planets -->
     <section id="planets" class="planets">
       <figure id="mercery"></figure>
       <figure id="venus"></figure>
@@ -37,28 +34,62 @@
       <figure id="neptune"></figure>
     </section>
 
-    <section id="planet-details">
+    <!-- Overview planet-details -->
+
+    <article id="planet-details-overview">
       <figure id="planet-zoomed">
         <figure id="radient"></figure>
       </figure>
 
-      <article class="planet-info" id="planet-name"></article>
-      <article class="planet-info" id="planet-desc"></article>
-      <p>Min temp:</p> <article class="planet-info" id="planet-mintemp"></article>
-      <p>Max temp:</p> <article class="planet-info" id="planet-maxtemp"></article>
-      <p>Km från solen:</p> <article class="planet-info" id="planet-distance"></article>
-      <p>Månar:</p> <article class="planet-info" id="planet-moons"></article>
-      <button id="back">Go back</button>
+      <!-- Planet-details -->
+
+      <article class="planet-info">
+
+        <header id="planet-name"></header>
+        <header id="latin-name"></header>
+        <section id="planet-desc"></section>
+
+        <section id="info-box1">
+          <section class="border-top">
+            <b> Omkrets </b>
+            <section id="circumference"></section>
+          </section>
+
+          <section class="border-top">
+            <b> Km från solen </b>
+            <section id="planet-distance"></section>
+          </section>
+
+          <section>
+            <b> Max temperatur </b>
+            <section id="planet-maxtemp"></section>
+          </section>
+
+          <section>
+            <b> Min temperatur </b>
+            <section id="planet-mintemp"></section>
+          </section>
+
+        </section>
+
+
+        <section class="border-top">
+          <b> Månar </b>
+          <section id="planet-moons"></section>
+        </section>
+
+        <button id="back">X</button>
+
       </article>
-    </section>
 
+    </article>
 
-    
-    </main>
+  </main>
+
   <script src="api.js"></script>
   <script src="script.js"></script>
   <script src="eventlisteners.js"></script>
+
 </body>
 
 </html>
-
